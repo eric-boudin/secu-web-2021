@@ -1,0 +1,5 @@
+Hachage: ne peux pas faire revenir un element haché sur sa valeur d'origine mais on peut appliquer le hachage sur le potentientiel resultat et comparé les 2.
+Encodage: peut etre traduit si on connait la clé
+
+sel: rajoute une element supplémentaire sur l'element à haché pour le rendre encore plus impossible à craquer
+poivre: Encodage d'un hashing

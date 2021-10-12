@@ -3,11 +3,12 @@
 	<br>
 	<input type="submit" name="button"></input>
 </form>
-<!-- </div><script>alert("YOU HAVE BEEN HACKED")</script> -->
+<!-- document.cookie -->
 
 <?php
+	setcookie("name","Eric");
 	if(isset($_POST['button'])) {
 		$content = $_POST['content'];
-		echo '<div>'. $content .'</div>';
+		echo '<script> alert("'. htmlspecialchars($content) .'") </script>';
 	}
 ?>

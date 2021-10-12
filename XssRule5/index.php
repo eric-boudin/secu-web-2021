@@ -3,7 +3,7 @@
 	<br>
 	<input type="submit" name="button"></input>
 </form>
-<!-- http://localhost/XssRule5/<script>alert('text');</script> -->
+<!-- " onmouseover='alert(1)' -->
 
 <?php
 	if(isset($_POST['button'])) {

@@ -8,6 +8,6 @@
 <?php
 	if(isset($_POST['button'])) {
 		$content = $_POST['content'];
-		echo '<div>'. $content .'</div>';
+		echo '<div name='. $content .'> Hello world ! </div>';
 	}
 ?>

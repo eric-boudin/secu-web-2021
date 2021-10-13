@@ -1,0 +1,3 @@
+Une session ID doit être unique, très long (donc beaucoup de possibilité) et surtout aléatoire !
+3 endroit pour le stocker: cookie, localStorage et sessionStorage
+mettre du temps d'expiration pour les sessions du cote client et server

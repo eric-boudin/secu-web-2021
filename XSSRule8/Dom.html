@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dom Vulnerable</title>
+    <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+    <script src="esapi.js"></script>
+    <script src="resources/i18n/ESAPI_Standard_en_US.properties.js"></script>
+    <script src="resources/Base.esapi.properties.js"></script>
+</head>
+<body>
+    <h1>Welcome to my website</h1>
+    <div id="divone"></div>
+    <script>
+        org.owasp.esapi.ESAPI.initialize();
+        document.getElementById("divone").innerHTML = $ESAPI.encoder().encodeForHTML("<a href='https://www.dangerouswebsite.com/'>Click here for a surprise !</a>");
+    </script>
+</body>
+</html>
+
+
+
